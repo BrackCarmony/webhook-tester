@@ -1,9 +1,9 @@
 var express = require("express");
 var app = express();
-var serverConfig = require("./server_config.js");
+var serverConfig = require("./config.js");
 var bodyParser = require('body-parser');
 var session = require('express-session');
-var port = serverConfig.serverPort;
+var port = serverConfig.port;
 var cors = require('cors');
 
 app.use(cors());
